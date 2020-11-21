@@ -2,6 +2,7 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
@@ -187,19 +188,19 @@
 
         <ImageView
             android:id="@+id/actor1_downey"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             android:layout_marginStart="@dimen/marginStartNormal"
             android:layout_marginTop="7dp"
+            android:contentDescription="@string/robert_downey"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cast_actors"
-            app:srcCompat="@drawable/downey"
-            android:contentDescription="@string/robert_downey" />
+            app:srcCompat="@drawable/downey" />
 
         <ImageView
             android:id="@+id/actor2_evans"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             android:layout_marginStart="@dimen/marginStartSmall"
             app:layout_constraintStart_toEndOf="@+id/actor1_downey"
             app:layout_constraintTop_toTopOf="@+id/actor1_downey"
@@ -208,8 +209,8 @@
 
         <ImageView
             android:id="@+id/actor3_ruffalo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             android:layout_marginStart="@dimen/marginStartSmall"
             app:layout_constraintStart_toEndOf="@+id/actor2_evans"
             app:layout_constraintTop_toTopOf="@+id/actor2_evans"
@@ -218,13 +219,16 @@
 
         <ImageView
             android:id="@+id/actor4_hemsword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/marginStartSmall"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/chris_hemsworth"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/actor3_ruffalo"
             app:layout_constraintTop_toTopOf="@+id/actor3_ruffalo"
-            app:srcCompat="@drawable/hemsword"
-            android:contentDescription="@string/chris_hemsworth" />
+            app:srcCompat="@drawable/hemsword" />
 
         <TextView
             android:id="@+id/actor1_name"
