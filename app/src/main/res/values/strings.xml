@@ -3,7 +3,9 @@
     <string name="moviedetailsactivity">Кликнуть сюда для открытия MovieDetailsActivity</string>
 
     <string name="name">Avengers:\nEnd Game</string>
+    <string name="name1">Avengers: End Game</string>
     <string name="tag">Action, Adventure, Fantasy</string>
+    <string name="tag1">Action, Adventure, Drama</string>
     <string name="_125_reviews">125 REVIEWS</string>
     <string name="storyline">Storyline</string>
     <string name="age">13+</string>
@@ -34,6 +36,9 @@
 
 
     <string name="space4">16dp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movies_list">Movies list</string>
 
 
 </resources>

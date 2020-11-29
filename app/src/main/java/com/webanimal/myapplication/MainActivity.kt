@@ -1,21 +1,21 @@
 package com.webanimal.myapplication
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.webanimal.myapplication.fragments.FragmentMoviesList
 
 class MainActivity : AppCompatActivity() {
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val go : TextView = findViewById(R.id.go)
-        go.setOnClickListener {
-            var intent = Intent(this, MovieDetailsActivity::class.java)
-            startActivity(intent)
+
+        if(savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.mainFrameForFragments, FragmentMoviesList())
+                .commit()
         }
+
 
     }
 }
